@@ -234,6 +234,7 @@ def config_list_from_json(
         list: A list of configs for openai api calls.
     """
     json_str = os.environ.get(env_or_file)
+
     if json_str:
         config_list = json.loads(json_str)
     else:
